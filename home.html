@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MOMATO</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="temp1.css">
+   
+</head>
+
+<script>
+    function searchDiv() {
+      var searchQuery = document.getElementById("searchBox").value;
+      searchQuery=searchQuery.toLowerCase();
+
+      if(searchQuery === "pizza" ) {
+        window.location.href = "pizza.html";
+      }
+      else if(searchQuery === "burger") {
+        window.location.href = "burger.html";
+      }
+      else if(searchQuery === "rotis") {
+        window.location.href = "rotis.html";
+      }
+      else  if(searchQuery === "curries") {
+        window.location.href = "curries.html";
+      }
+      else if(searchQuery === "sushi") {
+        window.location.href = "sushi.html";
+      }
+      else if(searchQuery === "tacos") {
+        window.location.href = "tacos.html";
+      }
+      else{
+        alert("Can't Find the item you are looking for.");
+      }
+    }
+  </script>
+</head>
+<body >
+
+    <nav class="header">MOMATO</nav>
+    <p class="center-para">Search for an item or click on the image</p>
+	<nav class="nav"> 
+        <input type="text" id="searchBox" placeholder="Food item"> 
+        <button onclick="searchDiv()">Search</button>        
+    </nav>
+            <div class="food-items-container">
+                <div class="food-item" onclick="window.open('pizza.html', '_blank');">
+                  <img src="https://media-cdn.tripadvisor.com/media/photo-s/1b/3d/36/a0/fresh-hand-stretched.jpg" alt="Food item 1">
+                  <h3>Pizza</h3>
+                  <p>DA savory dish of Italian origin consisting of a usually round, flattened base of leavened wheat-based dough topped with tomatoes, cheese, and often various other ingredients.</p>
+                </div>
+
+                <div class="food-item" onclick="window.open('tacos.html', '_blank');">
+                  <img src="https://www.tacobell.co.in/pub/static/frontend/Flamingo/default/en_US/images/home-menu-taco-img.jpg" alt="Food item 2">
+                  <h3>Tacos</h3>
+                  <p>A traditional Mexican dish consisting of a corn or wheat tortilla filled with various ingredients, such as meat, beans, lettuce, and cheese.</p>
+                </div>
+
+                <div class="food-item" onclick="window.open('sushi.html', '_blank');">
+                  <img src="https://cdn.britannica.com/52/128652-050-14AD19CA/Maki-zushi.jpg" alt="Food item 3">
+                  <h3>Sushi</h3>
+                  <p>A Japanese dish consisting of small balls or rolls of vinegar-flavored cold cooked rice served with a garnish of raw fish, vegetables, or egg.</p>
+                </div>     
+            </div>
+
+
+            <div class="food-items-container">
+                <div class="food-item" onclick="window.open('rotis.html', '_blank');">
+                  <img src="https://myfoodstory.com/wp-content/uploads/2020/04/Soft-Rotis-How-to-make-them-at-home-5.jpg" alt="Food item 4">
+                  <h3>Rotis</h3>
+                  <p>Rotis made with organic atta would go perfectly with some curry.</p>
+                </div>
+                <div class="food-item" onclick="window.open('curries.html', '_blank');">
+                  <img src="https://previews.123rf.com/images/paulbrighton/paulbrighton1512/paulbrighton151200239/49876620-vegetarian-curries-selection-of-south-asian-vegetarian-curries-in-white-bowls-paneer-makhani.jpg" alt="Food item 5">
+                  <h3>Curries</h3>
+                  <p>A variety of curries are available.</p>
+                </div>
+                <div class="food-item" onclick="window.open('burger.html', '_blank');">
+                  <img src="https://www.thespruceeats.com/thmb/e-lll-PpJ5F-MF4C57LYag3IAB8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/easy-vegan-black-bean-veggie-burgers-3377008-hero-05-f7c0f0d9865e48b6be52a4c76ee22438.jpg" alt="Food item 6">
+                  <h3>Burgers</h3>
+                  <p>Hamburger, a sandwich consisting of one or more cooked beef patties, placed inside a sliced bread roll or bun roll.</p>
+                </div>
+                
+            </div>
+ 
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>

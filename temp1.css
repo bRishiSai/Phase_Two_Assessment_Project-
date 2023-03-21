@@ -1,0 +1,114 @@
+.food-items-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-color: blue;
+  }
+  
+  .food-item {
+    flex: 1;
+    margin: 10px;
+    border-color: blue;
+    text-align: center;
+  }
+
+  .food-item img {
+    width: 70%;
+    border-color: blue;
+    height: 50%;
+  }
+  
+  .food-item h3 {
+    margin: 10px 0;
+    
+  }
+  
+  .food-item p {
+    margin: 5px 0;
+
+  }
+ 
+         
+  .header{
+    text-align: center;
+    height: 50px;
+    width:auto;
+    background-color:rgba(161, 248, 226, 0.507);
+    color: brown;
+    padding: 40px;
+    justify-content: center;
+    font-size: xx-large;
+    font-style: italic;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.nav{
+    height: 30px;
+    font-size: large;
+    text-align: center;
+    width: auto;
+   font-style: italic;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-top: 10px;
+    font-size:larger;
+    padding-left: 10px;
+}
+
+.main{
+    margin-top: 5px;
+    height: 300px;
+    color:black;
+    font-size: x-large;
+    text-align:justify;
+    background-color: grey;
+    padding-top:10px;
+    padding-left: 190px;
+    padding-right: 190px;
+    padding-bottom: 10px;
+
+}
+
+.footer{
+    height: 30px;
+    width: auto;
+    background-color: rgba(161, 248, 226, 0.507);
+    padding-top: 10px;
+    padding-left: 10px;
+    color:black;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+}
+
+a:visited{
+    color: red;
+}
+a:active{
+    color: navy;
+}
+* {
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+div:hover {
+    cursor: pointer;
+  }
+
+  .center-image {
+    display: block;
+    margin: 0 auto;
+    width:200px;
+    height:150px;
+  }
+  .center-para {
+    text-align: center;
+  }
+.center-button {
+        background-color:greenyellow;
+     color: black;
+     padding: 10px 20px;
+     border-radius: 5px;
+     cursor: pointer;
+     display: block;
+        margin: 0 auto;
+  }
